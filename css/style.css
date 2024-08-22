@@ -715,6 +715,40 @@ button {
   margin: 25px 0;
 }
 
+/* Navbar Container */
+.navbar-light {
+     display: flex;
+     justify-content: space-between; /* Aligns logo and navigation items */
+     align-items: center;
+   }
+   
+   /* Navbar Brand (Logo) */
+   .logo {
+     margin-right: 20px; /* Spacing between logo and nav items */
+   }
+   
+   /* Navbar Items */
+   .navbar-nav {
+     display: flex;
+     align-items: center;
+   }
+   
+   /* Navbar Links */
+   .navbar-nav .nav-link {
+     padding: 10px 15px; /* Adjust padding for spacing around each nav item */
+   }
+   
+   /* Adjust margin between navbar items */
+   .navbar-nav .nav-item {
+     margin-right: 20px; /* Space between navigation items */
+   }
+   
+   /* Ensure the last nav item does not have extra margin */
+   .navbar-nav .nav-item:last-child {
+     margin-right: 0;
+   }
+
+   
 .info_section .social-box img {
   width: 35px;
   margin-right: 5px;
