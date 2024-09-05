@@ -106,7 +106,63 @@ h6 {
      -moz-box-sizing: border-box;
      box-sizing: border-box;
 }
-
+/* Specific Section Styling */
+.special-section {
+     background-color: #000; /* Black background */
+     color: #fff; /* White text for contrast */
+     padding: 20px;
+     border-radius: 8px; /* Rounded corners */
+     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7); /* Shadow effect */
+ }
+ 
+ .special-section .container {
+     display: flex;
+     flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+     gap: 20px; /* Space between sections */
+ }
+ 
+ .special-section .section {
+     flex: 1; /* Allow sections to grow and shrink as needed */
+     min-width: 200px; /* Minimum width of each section */
+ }
+ 
+ .special-section .section-title {
+     color: #fff; /* White text color for titles */
+     font-size: 18px;
+     margin-bottom: 15px;
+     font-weight: bold;
+ }
+ 
+ .special-section .footer_list, .special-section .footer_social_list {
+     list-style: none;
+     padding: 0;
+     display: flex;
+     flex-direction: column;
+ }
+ 
+ .special-section .footer_list li, .special-section .footer_social_list li {
+     margin-bottom: 10px;
+ }
+ 
+ .special-section .footer_list a, .special-section .footer_social_list a {
+     color: #fff;
+     text-decoration: none;
+ }
+ 
+ .special-section .footer_list a:hover, .special-section .footer_social_list a:hover {
+     color: #007bff;
+ }
+ 
+ .special-section .footer_address, .special-section .footer_phone, .special-section .footer_email {
+     margin-bottom: 10px;
+ }
+ 
+ @media (max-width: 768px) {
+     .special-section .container {
+         flex-direction: column; /* Stack sections vertically on smaller screens */
+     }
+ }
+ 
 h1 a,
 h2 a,
 h3 a,
