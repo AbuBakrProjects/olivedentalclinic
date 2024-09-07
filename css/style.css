@@ -99,6 +99,19 @@ h6 {
      font-size: 13px
 }
 
+/* Hide the logo inside the mobile header when the menu is collapsed */
+@media (max-width: 768px) {
+     /* Hide the logo inside the menu toggle when open */
+     .mobile_header .navbar-collapse .logo_main {
+         display: none;
+     }
+ 
+     /* Optionally, hide the logo at the top of the page when menu is open */
+     .mobile_header .navbar-toggler.collapsed + .logo {
+         display: none;
+     }
+ }
+ 
 *,
 *::after,
 *::before {
@@ -106,6 +119,7 @@ h6 {
      -moz-box-sizing: border-box;
      box-sizing: border-box;
 }
+
 /* Specific Section Styling */
 .special-section {
      background-color: #000; /* Black background */
@@ -120,44 +134,7 @@ h6 {
      flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
      gap: 20px; /* Space between sections */
  }
- /* Consultant Section Styling */
-.consultants_section {
-    padding: 60px 0; /* Padding around the section */
-}
-
-.section_title {
-    font-size: 32px; /* Larger font size for the title */
-    color: #333; /* Darker color for better readability */
-    margin-bottom: 40px; /* Space below the title */
-    text-align: center; /* Center align the title */
-}
-
-.consultants_list {
-    list-style: none; /* Remove default list styles */
-    padding: 0; /* Remove default padding */
-}
-
-.consultants_list li {
-    margin-bottom: 30px; /* Space between each consultant */
-    padding: 20px; /* Padding inside each list item */
-    border-bottom: 1px solid #ddd; /* Line under each item */
-}
-
-.consultants_list strong {
-    font-size: 22px; /* Larger font size for names */
-    font-weight: bold; /* Bold text for names */
-    color: #000; /* Black color for names */
-    display: block; /* Ensures names are on a new line */
-    margin-bottom: 10px; /* Space below names */
-}
-
-.consultants_list p {
-    font-size: 16px; /* Font size for details */
-    color: #555; /* Slightly lighter color for details */
-    line-height: 1.6; /* Line height for readability */
-    margin: 0; /* Remove default margins */
-}
-
+ 
  .special-section .section {
      flex: 1; /* Allow sections to grow and shrink as needed */
      min-width: 200px; /* Minimum width of each section */
@@ -169,6 +146,44 @@ h6 {
      margin-bottom: 15px;
      font-weight: bold;
  }
+ /* Consultant Section Styling */
+.consultants_section {
+     padding: 60px 0; /* Padding around the section */
+ }
+ 
+ .section_title {
+     font-size: 32px; /* Larger font size for the title */
+     color: #333; /* Darker color for better readability */
+     margin-bottom: 40px; /* Space below the title */
+     text-align: center; /* Center align the title */
+ }
+ 
+ .consultants_list {
+     list-style: none; /* Remove default list styles */
+     padding: 0; /* Remove default padding */
+ }
+ 
+ .consultants_list li {
+     margin-bottom: 30px; /* Space between each consultant */
+     padding: 20px; /* Padding inside each list item */
+     border-bottom: 1px solid #ddd; /* Line under each item */
+ }
+ 
+ .consultants_list strong {
+     font-size: 22px; /* Larger font size for names */
+     font-weight: bold; /* Bold text for names */
+     color: #000; /* Black color for names */
+     display: block; /* Ensures names are on a new line */
+     margin-bottom: 10px; /* Space below names */
+ }
+ 
+ .consultants_list p {
+     font-size: 16px; /* Font size for details */
+     color: #555; /* Slightly lighter color for details */
+     line-height: 1.6; /* Line height for readability */
+     margin: 0; /* Remove default margins */
+ }
+ 
  
  .special-section .footer_list, .special-section .footer_social_list {
      list-style: none;
